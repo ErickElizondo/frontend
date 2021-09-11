@@ -37,7 +37,7 @@ const Register = ({ }) => {
     }
 
     try {
-      const { data } = await axios.put(
+      const { data } = await axios.post(
         "https://testingproyectobackend.herokuapp.com/api/auth/register",
         {
           username,
