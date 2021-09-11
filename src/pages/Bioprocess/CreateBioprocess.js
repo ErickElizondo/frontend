@@ -62,7 +62,8 @@ export default function CreateBioprocess() {
                 headers: {
                   "Content-Type": "application/json",
                   Authorization: `Bearer ${localStorage.getItem("authToken")}`,
-                  "Access-Control-Allow-Origin": "*"
+                  "Access-Control-Allow-Origin": "*",
+                  "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
                 }
               };
               console.log(config);
