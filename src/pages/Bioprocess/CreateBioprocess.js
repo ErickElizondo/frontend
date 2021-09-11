@@ -62,18 +62,11 @@ export default function CreateBioprocess() {
                 headers: {
                   "Content-Type": "application/json",
                   Authorization: `Bearer ${localStorage.getItem("authToken")}`,
-                  "Access-Control-Allow-Origin": "*",
-                  "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
                 }
               };
               console.log(config);
-			  console.log("hola");
           
-<<<<<<< HEAD
-              axios.post("https://testingproyectobackend.herokuapp.com/api/private/bioprocess", values, config)
-=======
-              axios.post("/api/private/bioprocess", values, config)
->>>>>>> parent of 1c8312f (Test using PUT request)
+              axios.put("/api/private/bioprocess", values, config)
               .then(confirmPost).catch(console.log);
               
         }

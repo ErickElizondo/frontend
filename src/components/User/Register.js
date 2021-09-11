@@ -24,8 +24,6 @@ const Register = ({ }) => {
     const config = {
       header: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
       },
     };
 
@@ -39,12 +37,8 @@ const Register = ({ }) => {
     }
 
     try {
-      const { data } = await axios.post(
-<<<<<<< HEAD
-        "https://testingproyectobackend.herokuapp.com/api/auth/register",
-=======
+      const { data } = await axios.put(
         "/api/auth/register",
->>>>>>> parent of 1c8312f (Test using PUT request)
         {
           username,
           email,
