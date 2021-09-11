@@ -40,7 +40,11 @@ const Register = ({ }) => {
 
     try {
       const { data } = await axios.post(
+<<<<<<< HEAD
         "https://testingproyectobackend.herokuapp.com/api/auth/register",
+=======
+        "/api/auth/register",
+>>>>>>> parent of 1c8312f (Test using PUT request)
         {
           username,
           email,

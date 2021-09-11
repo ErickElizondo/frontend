@@ -69,7 +69,11 @@ export default function CreateBioprocess() {
               console.log(config);
 			  console.log("hola");
           
+<<<<<<< HEAD
               axios.post("https://testingproyectobackend.herokuapp.com/api/private/bioprocess", values, config)
+=======
+              axios.post("/api/private/bioprocess", values, config)
+>>>>>>> parent of 1c8312f (Test using PUT request)
               .then(confirmPost).catch(console.log);
               
         }

@@ -25,7 +25,11 @@ const Login = ({ history }) => {
 
     try {
       const { data } = await axios.post(
+<<<<<<< HEAD
         "https://testingproyectobackend.herokuapp.com/api/auth/login",
+=======
+        "/api/auth/login",
+>>>>>>> parent of 1c8312f (Test using PUT request)
         { email, password },
         config
       );
