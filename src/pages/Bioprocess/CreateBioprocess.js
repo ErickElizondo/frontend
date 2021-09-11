@@ -68,7 +68,7 @@ export default function CreateBioprocess() {
               };
               console.log(config);
           
-              axios.post("https://testingproyectobackend.herokuapp.com/api/private/bioprocess", values, config)
+              axios.post("https://cors-anywhere.herokuapp.com/https://testingproyectobackend.herokuapp.com/api/private/bioprocess", values, config)
               .then(confirmPost).catch(console.log);
               
         }
