@@ -38,7 +38,7 @@ const Register = ({ }) => {
 
     try {
       const { data } = await axios.put(
-        "/api/auth/register",
+        "https://testingproyectobackend.herokuapp.com/api/auth/register",
         {
           username,
           email,
