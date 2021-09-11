@@ -20,6 +20,7 @@ const Login = ({ history }) => {
     const config = {
       header: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
       },
     };
 

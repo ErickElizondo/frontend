@@ -24,6 +24,7 @@ const Register = ({ }) => {
     const config = {
       header: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
       },
     };
 
