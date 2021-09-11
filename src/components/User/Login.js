@@ -19,13 +19,13 @@ const Login = ({ history }) => {
 
     const config = {
       header: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
     };
 
     try {
       const { data } = await axios.post(
-        "https://cors-anywhere.herokuapp.com/https://testingproyectobackend.herokuapp.com/api/auth/login",
+        "https://testingproyectobackend.herokuapp.com/api/auth/login",
         { email, password },
         config
       );

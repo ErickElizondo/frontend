@@ -40,7 +40,7 @@ const Register = ({ }) => {
 
     try {
       const { data } = await axios.post(
-        "https://cors-anywhere.herokuapp.com/https://testingproyectobackend.herokuapp.com/api/auth/register",
+        "https://testingproyectobackend.herokuapp.com/api/auth/register",
         {
           username,
           email,

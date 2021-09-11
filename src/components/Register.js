@@ -28,7 +28,7 @@ export default function Register() {
               };
               console.log(config);
           
-              axios.post("https://cors-anywhere.herokuapp.com/https://testingproyectobackend.herokuapp.com/api/auth/register", data, config)
+              axios.post("https://testingproyectobackend.herokuapp.com/api/auth/register", data, config)
               .then(console.log).catch(console.log);
           
         
